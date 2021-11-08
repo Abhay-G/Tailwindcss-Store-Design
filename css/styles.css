@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    height: 4000px;
+}
+.hero_heading {
+    left: 46%;
+    width: 40%;
+}
+.slider_dots {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider_dots button {
+    font-size: 0;
+    width: 5px;
+    height: 5px;
+    background: #d8d8d8;
+    border-radius: 50%;
+    outline: none;
+}
+.slider_dots li.slick-active button {
+    background: #fe7865;
+    width: 10px;
+    height: 10px;
+}
+.slider_dots ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upto {
+    position: relative;
+}
+.upto::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    height: 4px;
+    width: 70%;
+    background: #fe7865;
+}
+.sub-menu {
+    max-height: 0;
+    overflow: hidden;
+}
+.menu_trigger.is_open {
+    color: #fe7865;
+}
+.menu_trigger.is_open + .sub-menu {
+    max-height: 100%;
+    overflow: visible;
+}
+.box-1 {
+    position: relative;
+    height: 20rem;
+}
+.box-1 img {
+    position: absolute;
+    top: -4rem;
+}
+
+.box-3 img {
+    position: absolute;
+    top: 2rem;
+}
+.box-4 {
+    position: relative;
+    height: 20rem;
+    margin-top: 10rem;
+}
+.box-4 img {
+    position: absolute;
+    top: -10rem;
+    left: 15%;
+}
+.box-5 {
+    position: relative;
+    height: 16rem;
+    margin-bottom: 4rem;
+}
+.box-5 img {
+    position: absolute;
+    bottom: -2rem;
+}
