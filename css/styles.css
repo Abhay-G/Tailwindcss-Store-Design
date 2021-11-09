@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-    height: 4000px;
+    overflow-x: hidden;
 }
 .hero_heading {
     left: 46%;
@@ -13,7 +13,8 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-.slider_dots button {
+.slider_dots button,
+.slider2-dots button {
     font-size: 0;
     width: 5px;
     height: 5px;
@@ -21,7 +22,8 @@ body {
     border-radius: 50%;
     outline: none;
 }
-.slider_dots li.slick-active button {
+.slider_dots li.slick-active button,
+.slider2-dots li.slick-active button {
     background: #fe7865;
     width: 10px;
     height: 10px;
@@ -108,4 +110,41 @@ body {
 }
 .agree_checkbox:checked + label::before {
     background-color: #fe7865;
+}
+.slick-slide.slick-center .inner_box {
+    padding: 0 20px;
+}
+
+.slider2 {
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.slick-slide.slick-center .inner_box > div {
+    padding: 50px 0;
+}
+.slick-slide:not(.slick-center) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.slick-slide:not(.slick-center) .label,
+.slick-slide:not(.slick-center) .number {
+    display: none;
+}
+.slider2-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider2-dots ul {
+    display: flex;
+    align-items: center;
+}
+.slider2-dots ul li {
+    margin-right: 20px;
+}
+.slider-img {
+    width: 450px;
+    height: 284px;
+    object-fit: contain;
 }

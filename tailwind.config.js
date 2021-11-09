@@ -49,7 +49,11 @@ module.exports = {
                 100: '#FEC365',
             },
         },
-        extend: {},
+        extend: {
+            spacing: {
+                112: '28rem',
+            },
+        },
     },
     variants: {
         extend: {
